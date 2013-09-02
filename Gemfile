@@ -6,6 +6,10 @@ gem 'mechanize'
 gem 'nokogiri'
 gem 'pry-rails'
 
+gem 'ruby-hackernews'
+
+gem 'devise'
+
 # Use postgresql as the database for Active Record
 gem 'pg'
 
