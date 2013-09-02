@@ -8,7 +8,12 @@ gem 'pry-rails'
 
 gem 'ruby-hackernews'
 
-# Use postgresql as the database for Active Record
+
+gem 'devise', '3.0.0rc'
+gem 'dotenv-rails'
+gem 'omniauth'
+gem 'omniauth-github'
+gem 'textacular', '~> 3.0'
 gem 'pg'
 
 # Use SCSS for stylesheets
