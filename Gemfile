@@ -8,8 +8,10 @@ gem 'pry-rails'
 
 gem 'ruby-hackernews'
 
-gem 'devise'
+gem 'devise', '3.0.0rc'
 gem 'dotenv-rails'
+gem 'omniauth'
+gem 'omniauth-github'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
