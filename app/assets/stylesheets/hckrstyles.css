@@ -29,6 +29,7 @@ div {
   -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 10px rgba(143, 143, 143, 0.53);
+  z-index: 10000;
 }
 
 .navbar-inner {
@@ -60,7 +61,8 @@ body > .post_wrapper {
   margin-right: 2.25%;
   margin-bottom: 2.75%;
   padding: 0;
-  border-radius: 4px;
+  -webkit-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
   border: 1px solid rgba(160, 160, 160, 0.73);
   background: rgba(223, 223, 223, 0.44);
   box-shadow: 0 5px 6px rgba(194, 194, 194, 0.29);
@@ -72,21 +74,40 @@ body > .post_wrapper {
   width: 100%;
   height: auto;
   margin: 0;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  -webkit-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
   font-size: 22px;
-  background-color: #F7BE81;
+  background-color: rgb(255, 174, 100);
 }
 
-.post > .post_content {
+.post > #post_content {
+  background-color: rgba(245, 245, 245, 0.8);
+  width: 100%;
+  height: 75%;
+  margin: 37px 0 0 0;
+  position: relative;
+  z-index: 0;
+}
 
+.post > #post_data {
+  position: absolute;
+  background: rgb(255, 174, 100);
+  width: 100%;
+  margin: 0;
+  height: 10%;
 }
 
 p {
-  font-family: 'Oxygen', serif;
   font-size: 18px;
-  color: #414141;
+  color: #303030;
+  font-family: 'Monda';
   margin-left: -1px;
+}
+
+p#data {
+  font-size: 12px;
+  color: white;
+  margin: 3px 0;
 }
 
 a {
