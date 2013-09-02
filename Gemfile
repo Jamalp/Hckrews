@@ -9,6 +9,7 @@ gem 'pry-rails'
 gem 'ruby-hackernews'
 
 gem 'devise'
+gem 'dotenv-rails'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
