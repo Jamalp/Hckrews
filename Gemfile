@@ -4,7 +4,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem 'mechanize'
 gem 'nokogiri'
+gem 'ruby-hackernews'
+
 gem 'pry-rails'
+gem 'sendgrid'
 
 gem 'ruby-hackernews'
 
@@ -14,6 +17,8 @@ gem 'dotenv-rails'
 gem 'omniauth'
 gem 'omniauth-github'
 gem 'textacular', '~> 3.0'
+
+# Use postgresql as the database for Active Record
 gem 'pg'
 
 # Use SCSS for stylesheets
