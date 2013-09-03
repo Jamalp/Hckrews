@@ -11,10 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130902194903) do
+ActiveRecord::Schema.define(version: 20130903154205) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "posts", force: true do |t|
+    t.string   "title"
+    t.string   "description"
+    t.string   "href"
+    t.integer  "score"
+    t.string   "user"
+    t.string   "user_href"
+    t.integer  "comments_count"
+    t.integer  "hn_post_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "posts", ["created_at"], name: "index_posts_on_created_at", using: :btree
+  add_index "posts", ["id"], name: "index_posts_on_id", using: :btree
+  add_index "posts", ["updated_at"], name: "index_posts_on_updated_at", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "name"
@@ -35,6 +52,8 @@ ActiveRecord::Schema.define(version: 20130902194903) do
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["id"], name: "index_users_on_id", using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["uid"], name: "index_users_on_uid", using: :btree
 
 end
