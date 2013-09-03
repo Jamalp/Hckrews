@@ -2,20 +2,11 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
-gem 'mechanize'
-gem 'nokogiri'
 gem 'ruby-hackernews'
 
-gem 'pry-rails'
 gem 'sendgrid'
 
-gem 'ruby-hackernews'
-
-
-gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 gem 'dotenv-rails'
-gem 'omniauth'
-gem 'omniauth-github'
 gem 'textacular', '~> 3.0'
 
 # Use postgresql as the database for Active Record
@@ -46,6 +37,16 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+group :test, :development do
+  gem 'pry'
+  gem 'pry-rails'
+  gem 'pry-rescue'
+end
+
+gem 'devise', git: 'https://github.com/plataformatec/devise.git', branch: 'master'
+gem 'omniauth'
+gem 'omniauth-github'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

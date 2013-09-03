@@ -5,7 +5,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :description
       t.string :href
       t.integer :score
-      t.string :user
+      t.string :hn_user
       t.string :user_href
       t.integer :comments_count
       t.integer :hn_post_id

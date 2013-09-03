@@ -1,6 +1,7 @@
 GIT
   remote: https://github.com/plataformatec/devise.git
   revision: 47d9f1b95962cf093be9517e2a60d56e963d54a3
+  branch: master
   specs:
     devise (3.1.0)
       bcrypt-ruby (~> 3.0)
@@ -63,6 +64,7 @@ GEM
       domain_name (~> 0.5)
     httpauth (0.2.0)
     i18n (0.6.5)
+    interception (0.3)
     jbuilder (1.5.1)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
@@ -119,6 +121,9 @@ GEM
       slop (~> 3.4)
     pry-rails (0.3.2)
       pry (>= 0.9.10)
+    pry-rescue (1.1.1)
+      interception (>= 0.3)
+      pry
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -194,12 +199,12 @@ DEPENDENCIES
   dotenv-rails
   jbuilder (~> 1.2)
   jquery-rails
-  mechanize
-  nokogiri
   omniauth
   omniauth-github
   pg
+  pry
   pry-rails
+  pry-rescue
   rails (= 4.0.0)
   ruby-hackernews
   sass-rails (~> 4.0.0)
