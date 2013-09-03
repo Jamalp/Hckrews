@@ -11,14 +11,14 @@ namespace :hn_rake do
       # BE CAREFUL ABOUT THE PARAMETERS. KEEP BELOW 3
       # WILL BE BANNED IF ABOVE 5 (300 Hits)
       post_data = { title: post.link.title,
-                    description: post.link.text,
-                    site: post.link.site,
+                    # description: post.link.text,
+                    # site: post.link.site,
                     href: post.link.href,
                     score: post.voting.score,
-                    user: post.user.name,
+                    # user: post.user.name,
                     comments_count: post.comments_count,
                     hn_post_id: post.id,
-                    created_at: post.time
+                    # created_at: post.time
                   }
       post = Post.create(post_data)
     end
