@@ -5,6 +5,7 @@ gem 'rails', '4.0.0'
 gem 'mechanize'
 gem 'nokogiri'
 gem 'pry-rails'
+gem 'sendgrid'
 
 gem 'ruby-hackernews'
 
