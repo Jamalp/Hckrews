@@ -1,5 +1,5 @@
 class DigestMailer < ActionMailer::Base
-  default from: "____EMAIL ADDRESS"
+  default from: "TeamScoutPost@gmail.com"
   include SendGrid
 
   sendgrid_category :use_subject_lines

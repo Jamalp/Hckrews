@@ -5,8 +5,8 @@ require File.expand_path('../application', __FILE__)
 HN::Application.initialize!
 
 ActionMailer::Base.smtp_settings = {
-  :user_name => '',
-  :password => '',
+  :user_name => 'ScoutPost',
+  :password => ENV['SENDGRID'],
   :domain => '',
   :address => 'smtp.sendgrid.net',
   :port => 587,
