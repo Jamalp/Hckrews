@@ -4,11 +4,12 @@ require 'ruby-hackernews'
 include RubyHackernews
 
 namespace :hn_rake do
-  desc "Using HN Gem to Pull posts from the front page"
   task posts: :environment do
     # Query hackernews with entry.all
     # store each returned entry as a post
-    Entry.all(8).each do |post|
+    Entry.all(1).each do |post|
+      # BE CAREFUL ABOUT THE PARAMETERS. KEEP BELOW 3
+      # WILL BE BANNED IF ABOVE 5 (300 Hits)
       post_data = { title: post.link.title,
                     description: post.link.text,
                     site: post.link.site,
