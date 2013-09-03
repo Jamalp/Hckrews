@@ -4,6 +4,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem 'mechanize'
 gem 'nokogiri'
+gem 'ruby-hackernews'
+
+gem 'pry-rails'
+
 
 # Use postgresql as the database for Active Record
 gem 'pg'
