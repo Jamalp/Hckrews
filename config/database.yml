@@ -2,17 +2,17 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: hckrnews_development
+  database: scoutpost_development
   pool: 5
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: hckrnews_test
+  database: scoutpost_test
   pool: 5
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: hckrnews_production
+  database: scoutpost_production
   pool: 5

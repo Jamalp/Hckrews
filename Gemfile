@@ -4,14 +4,19 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem 'mechanize'
 gem 'nokogiri'
+gem 'ruby-hackernews'
+
 gem 'pry-rails'
+gem 'sendgrid'
 
 gem 'ruby-hackernews'
 
-gem 'devise', '3.0.0rc'
+
+gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 gem 'dotenv-rails'
 gem 'omniauth'
 gem 'omniauth-github'
+gem 'textacular', '~> 3.0'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
