@@ -12,7 +12,7 @@ gem 'sendgrid'
 gem 'ruby-hackernews'
 
 
-gem 'devise', git: 'https://github.com/plataformatec/devise.git'
+# gem 'devise', git: 'https://github.com/plataformatec/devise.git'
 gem 'dotenv-rails'
 gem 'omniauth'
 gem 'omniauth-github'
